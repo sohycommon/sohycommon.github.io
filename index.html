@@ -117,6 +117,9 @@ p.center { text-align: center; text-indent: 0; }
 .illo .p { fill: var(--paper); } .illo .bg { fill: var(--chron-bg); }
 .illo .ln { fill: none; stroke: var(--ink); stroke-width: 1.5; } .illo .lns { fill: none; stroke: var(--soft); stroke-width: 1; }
 
+.hero .gh { position: absolute; z-index: 2; top: calc(18px + env(safe-area-inset-top, 0px)); right: max(20px, env(safe-area-inset-right, 0px)); display: flex; align-items: center; gap: 7px; padding: 6px 12px; border: 1px solid rgba(241, 236, 226, .25); border-radius: 999px; background: rgba(11, 15, 27, .45); color: #d6cfc3; font: 13px var(--f-mono); text-decoration: none; }
+.hero .gh:hover { color: #fff; border-color: rgba(241, 236, 226, .6); }
+@media (max-width: 480px) { .hero .gh span { display: none; } .hero .gh { padding: 8px; } }
 .hero { position: relative; height: 100vh; height: 100svh; min-height: 560px; margin: 0 calc(-1 * max(16px, env(safe-area-inset-right, 0px))) 0 calc(-1 * max(16px, env(safe-area-inset-left, 0px))); overflow: hidden; background: #0b0f1b; color: #f1ece2; }
 .hero .scene { position: absolute; inset: 0; width: 100%; height: 100%; }
 .hero .k { fill: #0a0d14; } .hero .p { fill: #e8b75d; } .hero .s { fill: #1f2435; }
@@ -149,6 +152,7 @@ p.center { text-align: center; text-indent: 0; }
 <body>
 
 <section class="hero" aria-label="표지">
+<a class="gh" href="https://github.com/sohycommon" target="_blank" rel="noopener" aria-label="GitHub sohycommon"><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg><span>sohycommon</span></a>
 <svg class="scene" viewBox="0 0 1600 900" preserveAspectRatio="xMaxYMax slice" aria-hidden="true">
 <defs>
   <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0b0f1b"/><stop offset=".55" stop-color="#1a2032"/><stop offset=".8" stop-color="#3b2a31"/></linearGradient>
